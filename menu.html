@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>Our Menu</title>
+<body background="4567.png" link="white" alink="white" vlink="white" text-decoration= none>
+
+
+<h2><center><font face = "Happy Hell" color ="Black" font size = "6"></font</center></h2>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(function()
+{
+    $(".add").click(function()
+    {
+        var currentVal = parseInt($(this).next(".qty").val());
+        if (currentVal != NaN)
+        {
+            $(this).next(".qty").val(currentVal + 1);
+        } 
+    });
+
+    $(".minus").click(function()
+    {
+        var currentVal = parseInt($(this).prev(".qty").val());
+        if (currentVal != NaN)
+        {
+            $(this).prev(".qty").val(currentVal - 1);
+        }
+    });
+});
+
+</script>
+</head>
+<body>
+
+
+<br><br><br><br><br><br>
+
+
+    <form id="myform" font-family="Comic Sans MS">
+        Mars Fries (Small)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty" style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="55/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+        Mars Fries (Medium)
+        <input type="button" value="+" id="add2" class="add" />        
+        <input type="text" id="qty2" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus2" class="minus" />
+	<input type="text" id="qty2" value="65/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+	
+	
+	Mars Fries(Large)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="80/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+
+	Deimos Brew(Small)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus"/>
+	<input type="text" id="qty2" value="110/-" class="qty" readonly="readonly" style="width: 40px;"/>
+<br><br><br>
+
+
+	Deimos Brew(Large)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus"/>
+	<input type="text" id="qty2" value="135/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+	Inter-Galactic Burger(Vegetarian)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="47/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+	Inter-Galactic Burger(Non-Vegetarian)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="60/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+		
+	The Saturn Donut(3/plate)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="100/-" class="qty" readonly="readonly"   style="width: 40px;"/>
+<br><br><br>
+
+
+
+
+	The Universal Burger(Vegetarian)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="68/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+	The Universal Burger(Non-Vegetarian)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="85/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+	Stuffed Garlic Tortilla
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="125/-" class="qty" readonly="readonly" style="width: 42px;" />
+<br><br><br>
+
+
+
+
+	
+	Martian Pizza(Regular)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="140/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+
+
+	Martian Pizza(Classic Hand Tossed)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="155/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+
+
+	Martian Pizza(Cheese Burst)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="160/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+
+
+	Comet Shake(Sugar Free- 200ml)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="50/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+
+	Comet Shake(200ml)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="60/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+
+	Spaghettification(Chilly Noodles)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="129/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+
+
+	Strawberry Pastry
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="79/-" class="qty" readonly="readonly" style="width: 35px;"/>
+<br><br><br>
+
+
+
+	Cherry Cake
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="375/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+
+	Choco Lava Cake
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="425/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+
+	Martian Pasta(White-Sauce)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="250/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+	Martian Pasta(Red-Sauce)
+        <input type="button" value="+" id="add1" class="add" />        
+        <input type="text" id="qty1" value="1" class="qty"  style="width: 30px;"/>        
+        <input type="button" value="-" id="minus1" class="minus" />
+	<input type="text" id="qty2" value="250/-" class="qty" readonly="readonly" style="width: 42px;"/>
+<br><br><br>
+
+
+    </form>
+
+</body>
